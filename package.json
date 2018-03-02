@@ -1,0 +1,26 @@
+{
+  "name": "nodejscart",
+  "version": "1.0.1",
+  "description": "Aplicacion carrito de compra en NodeJS",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "David Diaz",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luchohero/Hola-Mundo-Heroku.git"
+  },
+  "bugs": {
+    "url": "https://github.com/luchohero/Hola-Mundo-Heroku/issues"
+  },
+  "homepage": "https://github.com/luchohero/Hola-Mundo-Heroku#readme",
+  "engines": {
+      "node": "4.1.1"
+    }
+}
