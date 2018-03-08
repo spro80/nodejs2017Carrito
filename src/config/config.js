@@ -4,7 +4,7 @@
 //var configBD = BD.getConfigBD();
 
 //Require
-var mysql = require('mysql');
+//var mysql = require('mysql');
 
 //Read environment variables.
 var ConfigEntorno = require('./environmentConfig.js');
@@ -13,7 +13,7 @@ let ConfigEntornoAmbiente = ConfigEntorno.EnvironmentConfig();
 //console.log( ConfigEntornoAmbiente.SERVERURL );
 
 
-
+/*
 var connection = mysql.createConnection({
         
     host     : ConfigEntornoAmbiente.BD_HOST, //"localhost",//configBD.host,
@@ -35,3 +35,4 @@ connection.connect( function(err){
 });
 
 module.exports = connection;
+*/
