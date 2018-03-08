@@ -1,3 +1,5 @@
+"use strict";
+
 //Get Parameters Of Configuration BD
 //var ConfigBD = require("./configBD.js");
 //var BD = new ConfigBD("develop"); 
