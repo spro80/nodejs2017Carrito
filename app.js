@@ -39,10 +39,10 @@ console.log( ConfigEntornoAmbiente.SERVERURL );
 
 
 
-app.configure(function() {
+//app.configure(function() {
   //app.set('connection', connection);
   //app.set('app', app);
-});
+//});
 
 
 
