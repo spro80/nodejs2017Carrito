@@ -16,12 +16,12 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/luchohero/Hola-Mundo-Heroku.git"
+    "url": "git+https://github.com/spro80/nodejs2017Carrito.git"
   },
   "bugs": {
-    "url": "https://github.com/luchohero/Hola-Mundo-Heroku/issues"
+    "url": "https://github.com/spro80/nodejs2017Carrito/issues"
   },
-  "homepage": "https://github.com/luchohero/Hola-Mundo-Heroku#readme",
+  "homepage": "https://github.com/spro80/nodejs2017Carrito#readme",
   "engines": {
       "node": "4.1.1"
     }
