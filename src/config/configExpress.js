@@ -41,14 +41,14 @@ app.set('views', __dirname + '/../../src/views');
 
 
 //ESTO ESTA OK:
-app.use(express.session({
+/*app.use(express.session({
     secret: 'qwerty123',
     name: express.cookie_name,
     store: express.sessionStore, // connect-mongo session store
     proxy: true,
     resave: true,
     saveUninitialized: true
-}));
+}));*/
 
 
 
