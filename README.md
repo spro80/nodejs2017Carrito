@@ -6,6 +6,13 @@ Despligue en Heroku .
 Al hacer el deploy, se debe acceder a la siguiente URL:
 https://nodejs2017carrito.herokuapp.com/
 
+#VER LOGS DE HEROKU WEB
+Primero hay que hacer login: heroku login
+Luego hacer: heroku logs --app nombreDeAppEnheroku
+heroku logs --app nodejs2017Carrito
+
+
+
 
 #INICIAR EN ENTORNO LOCAL
 En el directorio raiz, ejecutar:  npm start
