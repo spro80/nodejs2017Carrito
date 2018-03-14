@@ -13,7 +13,20 @@ app.set('port', process.env.PORT || 4300);
 app.use(express.logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded());
-app.use(express.methodOverride());
+
+
+
+
+
+
+//app.use(express.methodOverride());
+
+
+
+
+
+
+
 
 app.use(express.static('public'));
 
@@ -21,11 +34,26 @@ app.use(express.static('public'));
 app.set('views', __dirname + '/../../src/views');
 
 
-app.use(express.cookieParser('secret'));//necesario para utilizar sesiones
-app.use(express.session({cookie: {maxAge: 900000}}));//tiempo de expiración de la sesión
+//ESTO DABA ERROR:
+//app.use(express.cookieParser('secret'));//necesario para utilizar sesiones
+//app.use(express.session({cookie: {maxAge: 900000}}));//tiempo de expiración de la sesión
+//ERROR: express-session deprecated req.secret; provide secret option node_modules/connect/lib/middleware/session.js:33:10
+
+
+//ESTO ESTA OK:
+app.use(express.session({
+    secret: 'qwerty123',
+    name: express.cookie_name,
+    store: express.sessionStore, // connect-mongo session store
+    proxy: true,
+    resave: true,
+    saveUninitialized: true
+}));
+
+
 
 //app.set('superSecret', config.secret); // secret variable
-app.set('superSecret', 'SECRETOOOOOOOO'); // secret variable
+//app.set('superSecret', 'SECRETOOOOOOOO'); // secret variable
 
 
 /*app.use(express.static(__dirname + '../public'));
