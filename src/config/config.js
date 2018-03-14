@@ -6,7 +6,7 @@
 //var configBD = BD.getConfigBD();
 
 //Require
-//var mysql = require('mysql');
+var mysql = require('mysql');
 
 //Read environment variables.
 var ConfigEntorno = require('./environmentConfig.js');
