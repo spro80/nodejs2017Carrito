@@ -14,7 +14,6 @@ let ConfigEntornoAmbiente = ConfigEntorno.EnvironmentConfig();
 //console.log( ConfigEntornoAmbiente.PORT );
 //console.log( ConfigEntornoAmbiente.SERVERURL );
 
-
 /*
 var connection = mysql.createConnection({
         
