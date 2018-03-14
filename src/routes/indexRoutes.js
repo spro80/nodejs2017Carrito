@@ -1,13 +1,20 @@
 	
 module.exports = function ( app ){
 	
-	app.get("/index", function(request,response){
+	app.get("/", function(req,res){
 		 
-		 response.send('index');
-		 //response.render('index' , { title: 'El titulo es Hello World' } );
+		 //response.send('index');
+		 res.render('index' , { title: 'El titulo es Hello World' } );
 		 //response.render('index.jade'  );
 		 
+	});
+	 
+	app.get("/index", function(req,res){
 		 
-	 });
+		 //response.send('index');
+		 res.render('index' , { title: 'El titulo es Hello World' } );
+		 //response.render('index.jade'  );
+		 
+	});
 	 
 }
