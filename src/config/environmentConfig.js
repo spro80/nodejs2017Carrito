@@ -7,7 +7,8 @@ exports.EnvironmentConfig = function() {
 	console.log("[environmentConfig.js] Init in function EnvironmentConfig.");
 	
 	var environmentJSON = require('./environment.json');
-	
+
+	console.log("VARIABLE ENTORNO: "+ process.env.NODE_ENV );
 	var node_env = process.env.NODE_ENV || 'development';
 	console.log("PORT is: "+ environmentJSON[node_env].PORT );
 	
