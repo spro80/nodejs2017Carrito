@@ -45,9 +45,10 @@ console.log( ConfigEntornoAmbiente.SERVERURL );
 //});
 
 
-
+/*
 http.createServer(app).listen( ConfigEntornoAmbiente.PORT , function(){
   console.log('Express Server Listening ON Port ' + ConfigEntornoAmbiente.PORT );
 });
+*/
 
 
