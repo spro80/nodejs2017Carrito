@@ -8,9 +8,7 @@ https://nodejs2017carrito.herokuapp.com/
 
 #VER LOGS DE HEROKU WEB
 Primero hay que hacer login: heroku login
-Luego hacer: heroku logs --app nombreDeAppEnheroku
-heroku logs --app nodejs2017Carrito
-
+ddiaz@ddiaz-Inspiron-5567:/var/www/html/nodejs2017Carrito$ heroku logs -t --app nodejs2017carrito
 
 
 

@@ -7,7 +7,8 @@
     "BD_USER": "spro80",
     "BD_PASS": "808080",
     "BD_DATABASE": "carritoresponsive",
-	"TOKEN_SECRET": "tokenDesarrollo"
+    "TOKEN_SECRET": "tokenDesarrollo",
+    "AMBIENTE" : "desarrollo"
   },
   "production": {
     "SERVERURL": "https://app.desarrolloweb.com/",
@@ -17,6 +18,7 @@
     "BD_USER": "spro80",
     "BD_PASS": "808080",
     "BD_DATABASE": "carritoresponsive",
-	"TOKEN_SECRET": "tokenProduccion"
+    "TOKEN_SECRET": "tokenProduccion",
+    "AMBIENTE" : "produccion"
   }
 }

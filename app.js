@@ -46,9 +46,25 @@ console.log( ConfigEntornoAmbiente.SERVERURL );
 
 
 
-http.createServer(app).listen( process.env.PORT , function(){
-  console.log('Express Server Listening ON Port ' + process.env.PORT );
-});
+console.log( ConfigEntornoAmbiente.AMBIENTE );
+
+if( ConfigEntornoAmbiente.AMBIENTE == "desarrollo" ){
+	console.log("Esta seteado ambiente de desarrollo.");
+	http.createServer(app).listen( ConfigEntornoAmbiente.PORT , function(){
+		console.log('Express Server Listening ON Port ' + ConfigEntornoAmbiente.PORT );
+	});
+
+}else{
+	console.log("Esta seteado ambiente de produccion");
+
+	http.createServer(app).listen( process.env.PORT , function(){ 
+		console.log('Express Server Listening ON Port ' + process.env.PORT );
+	});
+
+}
+
+
+
 
 
 
