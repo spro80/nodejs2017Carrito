@@ -13,4 +13,13 @@ ddiaz@ddiaz-Inspiron-5567:/var/www/html/nodejs2017Carrito$ npm start
 
 ###################################################################
 
+###################################################################
 
+#ERRORES 2:   No carga pagina en produccion, pero si funciona en entorno local.
+
+Error R10 (Boot timeout) -> Web process failed to bind to $PORT within 60 seconds of launch
+
+
+
+
+###################################################################
