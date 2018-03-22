@@ -15,7 +15,7 @@ let ConfigEntornoAmbiente = ConfigEntorno.EnvironmentConfig();
 //console.log( ConfigEntornoAmbiente.SERVERURL );
 
 
-/*
+
 var connection = mysql.createConnection({
         
     host     : ConfigEntornoAmbiente.BD_HOST, //"localhost",//configBD.host,
@@ -37,4 +37,4 @@ connection.connect( function(err){
 });
 
 module.exports = connection;
-*/
+
