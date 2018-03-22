@@ -13,7 +13,7 @@ module.exports = function ( app ){
 	
 	app.post('/login', function(req, res){
 		
-		console.log(' **************** ');
+		/*console.log(' **************** ');
 		console.log( req.body );
 		//{ usuario: '14', password: '808080' }
 		console.log(' **************** ');
@@ -28,16 +28,18 @@ module.exports = function ( app ){
 		
 		console.log(' **************** ');
 		console.log( 'PASSWORD: '+req.body.password );		
-		
+		*/
 		
 		if( req.body.usuario == "1" && req.body.password == "123" ){
-			console.log(' El usuario SI se ha validado correctamente...');
-			res.render( 'menu', { titulo: 'titulo del menu...' } );
+                    //console.log(' El usuario SI se ha validado correctamente...');
+		    res.render( 'menu', { titulo: 'titulo del menu...' } );
 		}else{
-			console.log(' El usuario NO se ha validado correctamente...');
+		    //console.log(' El usuario NO se ha validado correctamente...');
+                    //console.log(' El usuario NO se ha validado correctamente...');
+                    res.render( 'errorLogin', { titulo: 'Error al hacer Login...' } );
 		}
 		
-		res.send('POST de login routes');
+		//res.send('POST de login routes');
 		//res.render('index', {title: 'Pagina de Login' });
 		
 	});
