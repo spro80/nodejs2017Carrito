@@ -9,18 +9,21 @@ var categoriaModel = {};
 //get All Subcategoria
 categoriaModel.getAllCategoria = function( callback ){
 		
-		if (connection){
-					connection.query(' SELECT * FROM categoria WHERE id_categoria != 0 ORDER BY id_categoria ASC  ', function(error, rows){
-									if(error){
-														throw error;
-													}else{
-																		callback(null, rows);
-																	}
-								});
-				}
+    if (connection){
+        connection.query(' SELECT * FROM categoria WHERE id_categoria != 0 ORDER BY id_categoria ASC  ', function(error, rows){
+           
+           console.log("-----------------");
+           console.log(error);
+           console.log("-----------------");
+
+           if(error){
+               throw error;
+           }else{
+               callback(null, rows);
+           }
+        });
+    }
 		
 }
-
-
 
 module.exports = categoriaModel;
