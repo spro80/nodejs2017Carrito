@@ -46,6 +46,7 @@ connection.connect( function(err){
         console.log("[config.js] Database is connected ... !!");    
     }else {
         console.log("[config.js] Error connecting database ... !!");
+	connection.end();
 	console.log( "***********************************" );
 	console.log( err );
 	console.log( "***********************************" );	    
