@@ -39,7 +39,7 @@ connection.connect( function(err){
     }else {
         console.log("[config.js] Error connecting database ... !!");
 	console.log( "***********************************" );
-	console.log( error );
+	console.log( err );
 	console.log( "***********************************" );	    
     }
     
