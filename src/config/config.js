@@ -25,10 +25,16 @@ console.log("////////////////////////////////////////////////***");
 
 var connection = mysql.createConnection({
         
-    host     : ConfigEntornoAmbiente.BD_HOST, //"localhost",//configBD.host,
+/*    host     : ConfigEntornoAmbiente.BD_HOST, //"localhost",//configBD.host,
     user     : ConfigEntornoAmbiente.BD_USER, //"spro80",//configBD.user,
     password : ConfigEntornoAmbiente.BD_PASS,//"808080",//configBD.password,
     database : ConfigEntornoAmbiente.BD_DATABASE//"carritoresponsive"//configBD.database
+*/
+
+    host     : "us-cdbr-iron-east-05.cleardb.net", //"localhost",//configBD.host,
+    user     : "bdfb4388ca15a4", //"spro80",//configBD.user,
+    password : "f5ff3602",//"808080",//configBD.password,
+    database : "heroku_6d8ab0ca6d86149"//"carritoresponsive"//configBD.database
     
 });
 
