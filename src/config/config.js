@@ -15,10 +15,12 @@ let ConfigEntornoAmbiente = ConfigEntorno.EnvironmentConfig();
 //console.log( ConfigEntornoAmbiente.SERVERURL );
 
 
+console.log("////////////////////////////////////////////////***");
 console.log( "ConfigEntornoAmbiente.BD_HOST: " + ConfigEntornoAmbiente.BD_HOST );
 console.log( "ConfigEntornoAmbiente.BD_USER: " + ConfigEntornoAmbiente.BD_USER );
 console.log( "ConfigEntornoAmbiente.BD_PASS: " + ConfigEntornoAmbiente.BD_PASS );
 console.log( "ConfigEntornoAmbiente.BD_DATABASE: " + ConfigEntornoAmbiente.BD_DATABASE );
+console.log("////////////////////////////////////////////////***");
 
 
 var connection = mysql.createConnection({
