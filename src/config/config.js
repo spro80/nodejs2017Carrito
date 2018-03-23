@@ -33,10 +33,14 @@ var connection = mysql.createConnection({
 
 connection.connect( function(err){
     
+    console.log("CONECTANDO CON BASE DE DATOS!!!");
     if(!err) {
         console.log("[config.js] Database is connected ... !!");    
     }else {
-        console.log("[config.js] Error connecting database ... !!");    
+        console.log("[config.js] Error connecting database ... !!");
+	console.log( "***********************************" );
+	console.log( error );
+	console.log( "***********************************" );	    
     }
     
 });
