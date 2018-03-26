@@ -9,9 +9,22 @@
 <body>
 	
 	Cargando pagina GET categorias...
-	
-	
-			
+
+    <div>
+		<div> Nro </div>
+		<div> Categoria </div>
+		<div> Descripcion </div>
+		<div> Vigencia </div>
+	</div>
+            
+    <div>
+        <%for(var i=0; i<data.length; i++) {%>
+			<div> <%=(i+1)%>  </div>
+			<div> <%=data[i].id_categoria%>  </div>
+			<div> <%=data[i].des_categoria%>  </div>
+			<div> <%=data[i].vigencia_categoria%>  </div>
+        <%}%>
+    </div>
 	
 </body>
 
