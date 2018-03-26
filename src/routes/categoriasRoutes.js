@@ -12,11 +12,11 @@ module.exports = function ( app ){
             }else{
                 
                 if( data.length > 0 ){
-                    response.render('categoria/categorias' , { message:"Se han encontrado Categoria en BD." , data:data } );
+                    response.render('categorias/categorias' , { message:"Se han encontrado Categoria en BD." , data:data } );
 
                 }else{
 																									                      
-                    response.render('categoria/categorias' , { message:"No se han encontrado Categoria." } );
+                    response.render('categorias/categorias' , { message:"No se han encontrado Categoria." } );
 																												}
             }
         });
