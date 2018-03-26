@@ -12,10 +12,6 @@ categoriaModel.getAllCategoria = function( callback ){
     console.log("Iniciando en metodo getAllCategoria ");
     if (connection){
         connection.query(' SELECT * FROM categoria WHERE id_categoria != 0 ORDER BY id_categoria ASC  ', function(error, rows){
-           
-           console.log("-----------------+++++++++++++++++++++++");
-           console.log(error);
-           console.log("-----------------+++++++++++++++++++++++");
 
            if(error){
                throw error;
