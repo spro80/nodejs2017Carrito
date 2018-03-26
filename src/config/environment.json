@@ -12,7 +12,7 @@
   },
   "production": {
     "SERVERURL": "https://app.desarrolloweb.com/",
-    "PORT": 3002,
+    "PORT": 3003,
     "BD": "mysql",
     "BD_HOST": "us-cdbr-iron-east-05.cleardb.net",
     "BD_USER": "bdfb4388ca15a4",
