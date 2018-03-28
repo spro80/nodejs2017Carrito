@@ -16,7 +16,7 @@
     "BD": "mysql",
     "BD_HOST": "us-cdbr-iron-east-05.cleardb.net",
     "BD_USER": "bdfb4388ca15a4",
-    "BD_PASS": "bdfb4388ca15a4s",
+    "BD_PASS": "f5ff3602",
     "BD_DATABASE": "heroku_6d8ab0ca6d86149",
     "TOKEN_SECRET": "tokenProduccion",
     "AMBIENTE" : "produccion"
