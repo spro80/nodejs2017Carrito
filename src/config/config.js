@@ -39,7 +39,7 @@ var connection = mysql.createConnection({
 });
 
 
-/*
+
 connection.connect( function(err){
     
     console.log("CONECTANDO CON BASE DE DATOS!!!");
@@ -56,11 +56,34 @@ connection.connect( function(err){
 });
 
 module.exports = connection;
+
+
+/*
+var reconnect= function(err) {
+//    console.log(err);
+//    if (err.fatal && !err.fatal) {
+//        return;
+//    }
+    console.log(err.code,'Trying to connect in 5 secs'+new Date());
+    setTimeout(function (){
+        connection = mysql.createConnection(conn.config);
+        connection.on('error',reconnect);
+        connection.connect();
+    },5000);
+};
+connection.on('error',reconnect);
 */
+
+
+
+
 
 
 //var connection;
 
+
+////////////////////////////////////
+/*
 var db_config = {
     host: ConfigEntornoAmbiente.BD_HOST,
     user: ConfigEntornoAmbiente.BD_USER,
@@ -93,6 +116,84 @@ function handleDisconnect() {
 
 handleDisconnect();
 
-module.exports = connection;
+module.exports = connection;*/
+////////////////////////////////////////
+
+/*
+var mysql = require('mysql');
+var pool  = mysql.createPool({
+  host     : 'example.org',
+  user     : 'bob',
+  password : 'secret'
+});
+
+exports.getUsers = function(callback) {
+  pool.getConnection(function(err, connection) {
+    if(err) { 
+      console.log(err); 
+      callback(true); 
+      return; 
+    }
+    var sql = "SELECT id,name FROM users";
+    connection.query(sql, [], function(err, results) {
+      connection.release(); // always put connection back in pool after last query
+      if(err) { 
+        console.log(err); 
+        callback(true); 
+        return; 
+      }
+      callback(false, results);
+    });
+  });
+});
+*/
+
+////////////////////////////////////////
+
+/*
+var mysql_pool  = mysql.createPool({
+  connectionLimit : 100,
+  host            : ConfigEntornoAmbiente.BD_HOST,
+  user            : ConfigEntornoAmbiente.BD_USER,
+  password        : ConfigEntornoAmbiente.BD_PASS,
+  database        : ConfigEntornoAmbiente.BD_DATABASE
+});
+
+
+
+ console.log('API CALL: /api/database/status');
+ var retvalSettingValue = "?";
+ mysql_pool.getConnection(function(err, connection) {
+ if (err) {
+ connection.release();
+    console.log(' Error getting mysql_pool connection: ' + err);
+    throw err;
+    }
+     connection.query('SELECT SettingValue FROM your_database_table WHERE SettingKey =\'DatabaseStatus\'', function(err2, rows, fields) { 
+      if (err2) {
+ var data = { "Time":"", "DatabaseStatus":"" };
+ data["Time"] = (new Date()).getTime();
+ data["DatabaseStatus"] = "Down";
+ res.json(data); 
+ } else {
+ var dbretval = rows[0].SettingValue;
+ if (dbretval == 1 ) {
+ var data = { "Time":"", "DatabaseStatus":"" };
+ data["Time"] = (new Date()).getTime();
+ data["DatabaseStatus"] = "Up";
+ res.json(data); 
+ } else {
+ var data = { "Time":"", "DatabaseStatus":"" };
+ data["Time"] = (new Date()).getTime();
+ data["DatabaseStatus"] = "Down";
+ res.json(data); 
+ }
+ }
+ console.log(' mysql_pool.release()');
+ connection.release();
+     });
+ });
+
+module.exports = connection;*/
 
 
