@@ -21,6 +21,8 @@ categoriaModel.getAllCategoria = function( callback ){
         });
     }
 
+    connection.end();
+    
     console.log("Saliendo de metodo getAllCategoria ");
 		
 }
