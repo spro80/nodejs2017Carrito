@@ -23,10 +23,11 @@ categoriaModel.getAllCategoria = function( callback ){
 
 //    connection.end();
    
+/*
 setInterval(function () {
     connection.query('SELECT 1');
 }, 5000);
- 
+*/ 
     console.log("Saliendo de metodo getAllCategoria ");
 		
 }
