@@ -57,7 +57,9 @@ connection.connect( function(err){
 
 
 setInterval(function () {
+    console.log("**********************Keep Alive cada 5 segundo************************");
     connection.query('SELECT 1');
+    console.log("**********************Keep Alive cada 5 segundo************************");
 }, 5000);
 
 
