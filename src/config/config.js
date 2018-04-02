@@ -30,12 +30,12 @@ var connection = mysql.createConnection({
     password : ConfigEntornoAmbiente.BD_PASS,//"808080",//configBD.password,
     database : ConfigEntornoAmbiente.BD_DATABASE//"carritoresponsive"//configBD.database
 
-/*
+    /*
     host     : "us-cdbr-iron-east-05.cleardb.net", //"localhost",//configBD.host,
     user     : "bdfb4388ca15a4", //"spro80",//configBD.user,
     password : "f5ff3602",//"808080",//configBD.password,
     database : "heroku_6d8ab0ca6d86149"//"carritoresponsive"//configBD.database
-  */  
+    */  
 });
 
 
@@ -56,14 +56,16 @@ connection.connect( function(err){
 });
 
 
+
 setInterval(function () {
     console.log("**********************Keep Alive cada 5 segundo************************");
     connection.query('SELECT 1');
-    console.log("**********************Keep Alive cada 5 segundo************************");
 }, 5000);
 
 
+
 module.exports = connection;
+
 
 
 /*
